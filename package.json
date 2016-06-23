@@ -1,0 +1,31 @@
+{
+  "name": "provisioner",
+  "version": "1.0.0",
+  "description": "Provisioner for many backends",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel-compile -p node5 src:lib test:.test",
+    "test": "npm run compile && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhford/provisioner.git"
+  },
+  "keywords": [
+    "provisioner",
+    "taskcluster"
+  ],
+  "author": "John Ford",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jhford/provisioner/issues"
+  },
+  "homepage": "https://github.com/jhford/provisioner#readme",
+  "dependencies": {
+    "babel-compile": "^2.0.0",
+    "babel-preset-node5": "^11.1.0",
+    "mocha": "^2.5.3",
+    "taskcluster-base": "^3.0.0",
+    "taskcluster-lib-loader": "^1.0.0"
+  }
+}
